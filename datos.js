@@ -9,7 +9,7 @@ const TIENDA = {
   mapaConsulta: "Cuesta la Posadilla 2, Loja, Granada, España",   // texto que se busca en Google Maps
   incrustarMapa: true,                           // mapa de Google incrustado (déjalo en true al publicar la web)
   fondo: "",                                     // ruta o URL de una foto de fondo (ej. "img/taller.jpg"). Vacío = ilustración
-  imagenEmpresa: "",                             // foto grande de "Quiénes somos" (ej. "img/tienda.jpg"). Vacío = ilustración de ejemplo
+  imagenEmpresa: "img/portada.png",                             // foto grande de "Quiénes somos" (ej. "img/tienda.jpg"). Vacío = ilustración de ejemplo
   titulo: "Vestimos y equipamos a quien trabaja",
   descripcion: [
     "JIMCARSERVIS es tu tienda de ropa de trabajo y herramientas. Reunimos prendas resistentes, calzado y protección certificada, y herramientas eléctricas y manuales para talleres, obras y fábricas.",
