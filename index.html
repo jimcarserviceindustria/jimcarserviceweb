@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>JIMCARSERVIS</title>
+<meta name="description" content="JIMCARSERVIS: ropa de trabajo industrial, protección y herramientas. Pide por WhatsApp.">
+<meta name="theme-color" content="#0A0D10">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>[hidden]{display:none!important}html{background:#0D1114}</style>
+<link rel="stylesheet" href="styles.css?v=8">
+</head>
+<body>
+
+<div class="bg" id="bg"><canvas id="cv"></canvas></div>
+<div class="tint"></div>
+
+<div class="strip" aria-hidden="true"><div class="track" id="t0"></div></div>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="#inicio" aria-label="JIMCARSERVIS, inicio">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><polygon points="24,2 43,13 43,35 24,46 5,35 5,13" fill="var(--accent)"/><polygon class="ring" points="24,7 38.5,15.5 38.5,32.5 24,41 9.5,32.5 9.5,15.5" fill="none" stroke="#14181C" stroke-width="2.2" stroke-dasharray="5 4"/><text x="24" y="33" text-anchor="middle" font-family="Barlow Condensed,Arial Narrow,sans-serif" font-weight="800" font-size="27" fill="#14181C">J</text></svg>
+      <b>JIMCAR<em>SERVIS</em></b>
+    </a>
+    <nav class="links"><a href="#nosotros">Nosotros</a><a href="#catalogo">Catálogo</a><a href="#ubicacion">Ubicación</a></nav>
+    <button class="cartbtn" id="open" type="button" aria-label="Mi pedido"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 7V6a6 6 0 0 1 12 0v1h3l-1.5 15h-15L3 7zm2 0h8V6a4 4 0 0 0-8 0z"/></svg><span class="lbl">Mi pedido</span> <b id="n">0</b></button>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <svg class="gear" id="g1" viewBox="-100 -100 200 200" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"></svg>
+    <svg class="gear b" id="g2" viewBox="-100 -100 200 200" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"></svg>
+    <div class="wrap"><div class="in">
+      <span class="kick">Ropa industrial · Herramientas</span>
+      <h1>Equipo que <mark>aguanta</mark> el trabajo</h1>
+      <p>Ropa de trabajo, protección y herramientas para talleres, obras y fábricas. Elige tu producto y pídelo directo por WhatsApp.</p>
+      <div class="cta">
+        <a class="btn y" href="#catalogo">Ver catálogo</a>
+        <a class="btn g" id="waHero" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+    </div></div>
+  </section>
+
+  <section id="nosotros" class="wrap">
+    <div class="panel2">
+      <div class="l">
+        <span class="eyebrow">Quiénes somos</span>
+        <h2 id="tit">Vestimos y equipamos a quien trabaja</h2>
+        <div id="desc"></div>
+        <div class="pill3">
+          <div>Ropa de trabajo<small>Resistente y cómoda</small></div>
+          <div>Protección<small>Calzado y EPI certificado</small></div>
+          <div>Herramientas<small>Eléctricas y manuales</small></div>
+        </div>
+      </div>
+      <div class="r" id="empresaImg">
+        <svg class="empresa" viewBox="0 0 600 520" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración de la tienda JIMCARSERVIS">
+          <defs>
+            <linearGradient id="eg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#222c33"/><stop offset="1" stop-color="#0a0e11"/></linearGradient>
+            <pattern id="egrid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
+            <pattern id="ehaz" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="14" height="28" fill="#F5B800"/><rect x="14" width="14" height="28" fill="#14181C"/></pattern>
+          </defs>
+          <rect width="600" height="520" fill="url(#eg)"/>
+          <rect width="600" height="520" fill="url(#egrid)"/>
+          <g fill="none" stroke="#F5B800" stroke-width="2.5" stroke-opacity=".55"><g class="sp" id="eg1"></g><g class="sp rev" id="eg2"></g></g>
+          <rect x="60" y="150" width="480" height="290" fill="#1a232a" stroke="#34424d" stroke-width="2"/>
+          <rect x="60" y="112" width="480" height="52" fill="#F5B800"/>
+          <text x="300" y="150" text-anchor="middle" font-family="Barlow Condensed,Arial Narrow,sans-serif" font-weight="800" font-size="40" letter-spacing="6" fill="#14181C">JIMCARSERVIS</text>
+          <rect x="100" y="230" width="200" height="210" fill="#0f1519" stroke="#34424d" stroke-width="2"/>
+          <path d="M100 250H300M100 270H300M100 290H300M100 310H300M100 330H300M100 350H300M100 370H300M100 390H300M100 410H300" stroke="#2a363f" stroke-width="2"/>
+          <rect x="340" y="230" width="170" height="110" fill="#0a0e11" stroke="#F5B800" stroke-opacity=".6" stroke-width="2"/>
+          <path d="M350 248H500" stroke="#5b6b78" stroke-width="3"/>
+          <rect x="360" y="252" width="30" height="70" fill="#F5B800" opacity=".9"/>
+          <rect x="402" y="252" width="30" height="70" fill="#4a5a66"/>
+          <rect x="444" y="252" width="30" height="70" fill="#2f3d48"/>
+          <rect x="340" y="358" width="170" height="42" fill="#0f1519" stroke="#34424d"/>
+          <text x="425" y="385" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="14" letter-spacing="2" fill="#9AA5AF">ROPA · HERRAMIENTAS</text>
+          <rect x="0" y="440" width="600" height="80" fill="#0a0e11"/>
+          <rect x="0" y="440" width="600" height="14" fill="url(#ehaz)"/>
+        </svg>
+        <div class="cap"><span>Imagen de ejemplo · cámbiala en datos.js</span><b>JIMCARSERVIS</b></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tapes" aria-hidden="true">
+    <div class="tape a"><div class="track" id="t1"></div></div>
+    <div class="tape b"><div class="track" id="t2"></div></div>
+  </div>
+
+  <section id="catalogo" class="wrap sec">
+    <div class="head">
+      <div><span class="eyebrow">Catálogo</span><h2>Todo para tu trabajo</h2></div>
+      <label class="search"><input id="q" type="search" placeholder="Buscar: taladro, botas, guantes…" aria-label="Buscar productos"></label>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Categorías"></div>
+    <div class="count" id="count"></div>
+    <div class="grid" id="grid"></div>
+    <nav class="pager" id="pager" aria-label="Páginas del catálogo"></nav>
+  </section>
+
+  <section id="ubicacion" class="wrap sec" style="margin-top:36px">
+    <div class="head"><div><span class="eyebrow">Tienda física</span><h2>Visítanos</h2></div></div>
+    <div class="loc">
+      <div class="map" id="map">
+        <svg class="roads" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <g fill="none" stroke-linecap="round">
+            <path d="M-20 300 C150 270 250 330 420 250 S580 180 640 200" stroke="#fff" stroke-opacity=".75" stroke-width="16"/>
+            <path d="M120 -20 C140 100 220 160 250 420" stroke="#fff" stroke-opacity=".7" stroke-width="12"/>
+            <path d="M-20 120 L640 90" stroke="#fff" stroke-opacity=".55" stroke-width="8"/>
+            <path d="M420 -20 L380 420" stroke="#fff" stroke-opacity=".5" stroke-width="8"/>
+            <path d="M-20 360 L640 380" stroke="#fff" stroke-opacity=".4" stroke-width="6"/>
+          </g>
+          <g fill="#fff" fill-opacity=".35"><rect x="270" y="130" width="90" height="70"/><rect x="40" y="150" width="60" height="90"/><rect x="450" y="290" width="100" height="60"/><rect x="150" y="30" width="70" height="50"/></g>
+        </svg>
+        <div class="pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></div>
+      </div>
+      <div class="card2">
+        <h3>Nuestra tienda</h3>
+        <div class="dato"><small>Dirección</small><span id="dir"></span></div>
+        <div class="dato"><small>Horario</small><span id="hor"></span></div>
+        <div class="dato"><small>Teléfono</small><span id="tel"></span></div>
+        <a class="btn y" id="como" href="#" target="_blank" rel="noopener">Cómo llegar en Google Maps</a>
+        <a class="btn g" id="waLoc" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>¿No encuentras lo que buscas?</h2>
+    <p>Escríbenos y te decimos si lo tenemos, el precio y cuándo lo puedes recoger o recibir.</p>
+    <a class="btn g" id="waFoot" href="#" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+    <p>© <span id="anio"></span> JIMCARSERVIS · Email: <span id="femail"></span></p>
+  </div>
+</footer>
+
+<a class="fab" id="fab" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 13.9c-.2.6-1.3 1.2-1.8 1.2-.5.1-1.1.1-1.8-.1a14 14 0 0 1-5.4-3.9 6.7 6.7 0 0 1-1.4-3.2c0-1.1.6-1.7.8-1.9.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.8.9c.3.1.5.2.5.3.1.1.1.6-.1 1.3z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mTit">
+  <div class="scrim" id="scrim"></div>
+  <div class="sheet" id="sheet"></div>
+</div>
+
+<div class="veil" id="veil" hidden></div>
+<aside class="panel" id="panel" hidden aria-label="Mi pedido">
+  <div class="ph2"><h2>Mi pedido</h2><button class="x" id="close" type="button" aria-label="Cerrar">✕</button></div>
+  <div class="lines" id="lines"></div>
+  <div class="foot">
+    <div class="total"><span>Total</span><strong id="total">0,00 €</strong></div>
+    <a class="btn g" id="wa" href="#" target="_blank" rel="noopener" aria-disabled="true">Enviar pedido por WhatsApp</a>
+    <button class="alt" id="copy" type="button">Copiar pedido para enviar por email</button>
+    <p class="hint" id="hint"></p>
+  </div>
+</aside>
+
+<script src="datos.js?v=8"></script>
+<script src="app.js?v=8"></script>
+</body>
+</html>
