@@ -46,7 +46,7 @@ function pintaFondo(){
     c.closePath(); c.stroke(); c.beginPath(); c.arc(x,y,R*.45,0,7); c.stroke();
   });
 }
-let rz; addEventListener("resize",()=>{clearTimeout(rz);rz=setTimeout(()=>{pintaFondo();lista();},200);});
+let rz, ancho=innerWidth; addEventListener("resize",()=>{clearTimeout(rz);rz=setTimeout(()=>{ if(innerWidth===ancho) return; /* en móvil la barra del navegador cambia el alto al hacer scroll: se ignora */ ancho=innerWidth; pintaFondo(); lista(true);},200);});
 try{ matchMedia("(prefers-color-scheme: dark)").addEventListener("change",pintaFondo); }catch(e){}
 new MutationObserver(pintaFondo).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
 
@@ -114,9 +114,11 @@ function filtrados(){
 function chips(){
   $("chips").innerHTML=[["todas","Todo"],...Object.entries(CATEGORIAS)].map(([k,v])=>`<button class="chip" type="button" data-k="${k}" aria-pressed="${k===cat}">${esc(v)}</button>`).join("");
 }
-function lista(){
+let ultimoPP=0;
+function lista(soloSiCambia){
   const cols=Math.max(1,getComputedStyle($("grid")).gridTemplateColumns.split(" ").filter(Boolean).length);
   const PP=Math.max(cols,Math.round(POR_PAGINA/cols)*cols);
+  if(soloSiCambia&&PP===ultimoPP) return; ultimoPP=PP;
   const f=filtrados(), total=Math.max(1,Math.ceil(f.length/PP));
   if(pagina>total) pagina=total;
   const ini=(pagina-1)*PP, vis=f.slice(ini,ini+PP);

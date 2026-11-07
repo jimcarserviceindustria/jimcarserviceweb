@@ -16,7 +16,7 @@ button,input,select{font:inherit;color:inherit}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .wrap{max-width:1920px;margin:0 auto;padding-left:max(clamp(16px,3.2vw,64px),env(safe-area-inset-left,0px));padding-right:max(clamp(16px,3.2vw,64px),env(safe-area-inset-right,0px))}
 section{scroll-margin-top:100px}
-.bg{position:fixed;inset:-40px;z-index:-1;filter:blur(5px);opacity:.6;background-size:cover;background-position:center;animation:drift 45s ease-in-out infinite alternate}
+.bg{position:fixed;inset:-40px;z-index:-1;will-change:transform;backface-visibility:hidden;filter:blur(5px);opacity:.6;background-size:cover;background-position:center;animation:drift 45s ease-in-out infinite alternate}
 .bg canvas{width:100%;height:100%;display:block}
 .tint{position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% 0%,color-mix(in srgb,var(--bg) 62%,transparent),color-mix(in srgb,var(--bg) 90%,transparent) 75%)}
 @keyframes drift{from{transform:translate3d(-14px,-8px,0) scale(1)}to{transform:translate3d(14px,10px,0) scale(1.04)}}
